@@ -1,0 +1,42 @@
+body {
+    background-image: url("/assets/images/medicament.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+
+.overlay {
+    background-color: rgba(173, 216, 230, 0.3);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-connect {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+}
+
+nav.navbar {
+    z-index: 3;
+}
+
+.modal-content {
+    color: black;
+}

@@ -1,0 +1,23 @@
+body {
+    background-color: #f0f2f5;
+}
+
+.login-container {
+    margin-top: 80px;
+    max-width: 500px;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-select,
+.form-control {
+    margin-bottom: 15px;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
