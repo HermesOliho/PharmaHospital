@@ -1,0 +1,20 @@
+{
+    "name": "hermes/PharmaHospital",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "HeromTech\\": "core/",
+            "Controllers\\": "controllers/",
+            "Models\\": "models/"
+        }
+    },
+    "authors": [
+        {
+            "name": "HermesOliho",
+            "email": "hermes.oliho.m@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
