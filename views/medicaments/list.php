@@ -40,7 +40,8 @@
                             <form
                                 action="/medicaments/delete/<?= $medicament->id; ?>"
                                 id="deleteMedicament<?= $medicament->id; ?>"
-                                class="d-inline-block">
+                                class="d-inline-block"
+                                method="POST">
                                 <button type="submit" class="btn btn-outline-danger btn-sm">
                                     Supprimer
                                 </button>

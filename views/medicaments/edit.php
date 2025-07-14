@@ -1,6 +1,8 @@
 <section class="w-100 d-flex justify-content-center align-items-center bg-light" style="min-height: calc(100dvh - 4.5rem);">
     <form action="" method="POST" class="shadow rounded p-4 m-2 bg-white" style="width: 100%; max-width: 800px;">
-        <h3 class="text-center mb-4">Ajouter un médicament à la pharmacie</h3>
+        <h3 class="text-center mb-4">
+            <?= isset($medicament) ? "Éditer '$medicament->name'" : "Ajouter un médicament à la pharmacie"; ?>
+        </h3>
         <div class="form-group mb-3">
             <label for="name" class="form-label">Nom du médicament</label>
             <input
@@ -8,6 +10,7 @@
                 name="name"
                 id="name"
                 class="form-control"
+                value="<?= $medicament->name ?? '' ?>"
                 placeholder="Entrez le nom du médicament... " />
         </div>
         <div class="form-group mb-3">
@@ -18,7 +21,7 @@
                 class="form-control"
                 cols="40"
                 rows="10"
-                placeholder="Entrez une courte description du médicament... "></textarea>
+                placeholder="Entrez une courte description du médicament... "><?= $medicament->description ?? '' ?></textarea>
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-primary">
